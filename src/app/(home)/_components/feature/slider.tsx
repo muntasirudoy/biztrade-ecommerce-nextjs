@@ -8,6 +8,7 @@ import Image from "next/image";
 import styles from "./feature.module.css"
 import { StarRating } from "@/components/ui/rating/rating";
 import { CheckCircle } from "react-feather";
+import { NextArrow, PrevArrow } from "@/components/ui/CustomArrow";
 
 interface Seller {
     id: number
@@ -31,7 +32,8 @@ export default function SliderComponent({ sellers }: {
         speed: 500,
         slidesToShow: 5,
         slidesToScroll: 1,
-
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
         initialSlide: 0,
         responsive: [
             {

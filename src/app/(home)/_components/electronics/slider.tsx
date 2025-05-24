@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/card/card";
 import Image from "next/image";
 import styles from "./electronics.module.css"
 import { Product } from "@/types/tyes.d";
+import { NextArrow, PrevArrow } from "@/components/ui/CustomArrow";
 
 export default function SliderComponent({ products }: {
     products: Product[]
@@ -18,6 +19,8 @@ export default function SliderComponent({ products }: {
         slidesToShow: 4,
         slidesToScroll: 4,
         initialSlide: 0,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
         responsive: [
             {
                 breakpoint: 1024,
