@@ -18,14 +18,22 @@ This is a fully functional e-commerce web application built as part of a technic
 ## 📁 Project Structure (Modular Architecture)
 
 src/
+
 ├── components/ # Reusable UI components (compound pattern)
+
 ├── hooks/ # Custom React hooks (hook pattern)
+
 ├── pages/ # Next.js routing
+
 ├── styles/ # Raw CSS files (modular)
+
 ├── types/ # Global TypeScript types and interfaces
+
 ├── utils/ # Helper functions and utilities
-├── features/ # Feature-based business logic
-└── layouts/ # Application layouts and templates
+
+├── modules/ # Modules-based business logic
+
+└── constrant/ # Application constrant
 
 ## 🧑‍💻 Tech Stack
 
