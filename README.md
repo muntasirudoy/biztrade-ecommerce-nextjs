@@ -1,8 +1,6 @@
-# 🛒 Next.js E-commerce Website
+# 🛒 Next.js E-commerce Website [Live](<https://biztrade-ecommerce-nextjs.vercel.app/>)
 
 This is a fully functional e-commerce web application built as part of a technical assignment for **Biztrade**. The project leverages **Next.js**, **TypeScript**, and **raw CSS** following a **modular architecture**, clean code principles, and scalable React design patterns.
-
-# [Live](<https://biztrade-ecommerce-nextjs.vercel.app/>)
 
 ## ✨ Features
 
