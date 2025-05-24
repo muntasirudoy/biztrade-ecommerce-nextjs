@@ -1,0 +1,342 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.whatIsRfq {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .contentWrapper {
+    flex-direction: row;
+  }
+
+  .leftContent {
+    flex: 3;
+   
+  }
+
+  .testimonialContainer {
+    flex: 2;
+  }
+}
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.videoPlaceholder {
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  height: 150px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.playButton {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.playButton:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.playIcon {
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+  
+}
+
+.statisticsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+@media (min-width: 640px) {
+  .statisticsContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.statistic {
+  display: flex;
+  flex-direction: column;
+}
+
+.statisticValue {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.statisticLabel {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.testimonialContainer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.testimonial {
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonialHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonialImage {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #e5e7eb;
+}
+
+.authorImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonialAuthor {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.authorBusiness {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.testimonialQuote {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #111827;
+  margin: 0;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.testimonialDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #d1d5db;
+}
+
+.dot:first-child {
+  background-color: #6b7280;
+}
+
+.postRequirement {
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.postRequirementContent {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .postRequirementContent {
+    flex-direction: row;
+  }
+
+  .illustrationContainer {
+    flex: 1;
+  }
+
+  .formContainer {
+    flex: 1;
+  }
+}
+
+.illustrationContainer {
+  background-color: #fde68a;
+  background: linear-gradient(to right, #fde68a, #fecaca);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration {
+  max-width: 100%;
+  height: auto;
+}
+
+.formContainer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.formTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.formSubtitle {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.progressBar {
+  height: 0.25rem;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  width: 30%;
+  background-color: #f97316;
+  border-radius: 9999px;
+}
+
+.requirementForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formLabel {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.searchInputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1rem;
+  color: #9ca3af;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.searchInput::placeholder {
+  color: #9ca3af;
+}
+
+.continueButton {
+  background-color: #0066cc;
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  align-self: flex-end;
+  margin-top: 1rem;
+}
+
+.continueButton:hover {
+  background-color: #0052a3;
+}

@@ -1,0 +1,44 @@
+
+:root{
+   --primary-font: "Poppins", sans-serif;
+   --primary-color:#FF6600;
+   --background: #ededed
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family : var(--primary-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.sliders{
+  display: flex;
+  gap: 30px;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

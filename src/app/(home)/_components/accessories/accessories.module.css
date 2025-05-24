@@ -1,0 +1,160 @@
+.section {
+  margin-bottom: 3rem;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.carouselContainer {
+  position: relative;
+}
+
+.carouselButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: white;
+  border-radius: 9999px;
+  padding: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+}
+
+.carouselButton:first-child {
+  left: 0;
+}
+
+.carouselButton:last-child {
+  right: 0;
+}
+
+.carouselIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #6b7280;
+}
+
+.productsGrid {
+  /* display: grid; */
+  /* grid-template-columns: repeat(1, 1fr); */
+  /* gap: 1rem; */
+  width: 100%;
+  
+  padding: 0.5rem 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .productsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .productsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .productsGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.productCard {
+  height: 100%;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.productCardHeader {
+  padding: 0;
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.productCardBody {
+  padding: 1rem;
+}
+
+.productName {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 0.25rem;
+}
+
+.productPrice {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.productMoq {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.productCardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+    gap: 30px;
+}
+
+.associationContainer {
+  display: flex;
+  align-items: center;
+
+}
+
+.associationLogo {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #dbeafe;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+
+.associationLogo span {
+  font-size: 0.75rem;
+  color: #5e91ff;
+}
+
+.associationName {
+  font-size: 12px;
+    white-space: nowrap;
+}
+
+.inquiryButton {
+  background-color: #5e91ff;
+  color: white;
+  font-size: 12px;
+  white-space: nowrap;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.inquiryButton:hover {
+  background-color: #5e91ff;
+}

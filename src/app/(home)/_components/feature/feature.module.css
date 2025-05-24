@@ -1,0 +1,126 @@
+.section {
+  margin-bottom: 3rem;
+
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.carouselContainer {
+  position: relative;
+}
+
+.carouselButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: white;
+  border-radius: 9999px;
+  padding: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+}
+
+.carouselButton:first-child {
+  left: 0;
+}
+
+.carouselButton:last-child {
+  right: 0;
+}
+
+.carouselIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #6b7280;
+}
+
+.carouselTrack {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.5rem;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carouselTrack::-webkit-scrollbar {
+  display: none;
+}
+
+.sellerCard {
+  min-width: 220px;
+  flex: 0 0 auto;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.sellerCardHeader {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.logoContainer {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+}
+
+.invertedLogo {
+  filter: invert(1);
+}
+
+.sellerCardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sellerName {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.sellerCategory {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.ratingContainer {
+  margin-top: 0.5rem;
+}
+
+.verifiedIcon {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 0.25rem;
+
+}
+
+.badge{
+  background: var(--primary-color);
+  padding: 2px 10px;
+  border-bottom-left-radius: 7px;
+  font-size: 12px;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
