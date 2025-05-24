@@ -8,7 +8,15 @@ import { FeaturedSellers } from "./_components/feature/feature";
 import { Gadgets } from "./_components/gadgets/gadgets";
 import { HeroSection } from "./_components/hero/hero";
 import { Rfq } from "./_components/rfq/rfq";
-
+interface ServiceCardProps {
+  title?: string
+  description?: string
+  icon?: React.ReactNode
+  actions?: {
+    label: string
+    variant: "primary" | "secondary" | "tertiary"
+  }[]
+}
 export default async function Home() {
 
   const sellers = [
@@ -91,7 +99,7 @@ export default async function Home() {
       rating: 4,
     },
   ]
-  const services = [
+  const services: ServiceCardProps[] = [
     {
       title: "B2B Matchmaking",
       description:

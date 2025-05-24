@@ -1,4 +1,3 @@
-import { ChevronLeft, ChevronRight } from "lucide-react"
 import type React from "react"
 
 import styles from "./feature.module.css"
