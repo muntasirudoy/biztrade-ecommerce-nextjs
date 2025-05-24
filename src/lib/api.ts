@@ -1,13 +1,15 @@
+import { REVALIDATE } from "@/constrant/products-const";
+
 export async function getProducts() {
   const res = await fetch("https://dummyjson.com/products", {
-    cache: "no-store",
+    next: { revalidate: REVALIDATE },
   });
   if (!res.ok) throw new Error("Failed to fetch");
   return res.json();
 }
 export async function getProductDetailsById(id: number) {
   const res = await fetch(`https://dummyjson.com/products/${id}`, {
-    cache: "no-store",
+    next: { revalidate: REVALIDATE },
   });
   if (!res.ok) throw new Error("Failed to fetch");
   return res.json();

@@ -2,7 +2,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, ShoppingBag } from "react-feather"
 import styles from './hero.module.css'
-import { ArrowUpRight, ArrowUpRightFromSquare } from "lucide-react"
 export const HeroSection = () => {
     return (<>
         <div className={styles.container}>
