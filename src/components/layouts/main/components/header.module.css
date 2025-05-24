@@ -250,16 +250,17 @@
   background-color: #ea580c;
 }
 
-/* Desktop secondary navigation */
+
 .secondaryNav {
   display: none;
+      gap: 20px;
 }
 
 @media (min-width: 768px) {
   .secondaryNav {
     display: flex;
     align-items: center;
-    gap: 16px;
+       gap: 30px;
   }
 }
 
@@ -450,7 +451,7 @@
   }
 
   .secondaryNav {
-    gap: 12px;
+    gap: 20px;
   }
 
   .mainTabs {

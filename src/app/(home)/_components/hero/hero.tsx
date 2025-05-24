@@ -1,7 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ShoppingBag } from "react-feather"
+import { ArrowRight, ShoppingBag } from "react-feather"
 import styles from './hero.module.css'
+import { ArrowUpRight, ArrowUpRightFromSquare } from "lucide-react"
 export const HeroSection = () => {
     return (<>
         <div className={styles.container}>
@@ -112,17 +113,20 @@ export const HeroSection = () => {
                             </div>
                             <div className={styles.mainContentBottomBanners}>
                                 <div className={styles.mainContentBottomBanner}>
-                                    <span>
+                                    <span >
                                         Buyer <br />
                                         Matchmaking
-                                        <p>Learn More</p>
+                                        <p className={styles.mainContentBottomBannerLearn}>Learn More <ArrowRight size={18} style={{ background: '#f97316', color: 'white', marginTop: '5px', borderRadius: '100%', padding: '1px' }} />
+                                        </p>
                                     </span>
                                     <Image className={styles.mainContentBottomBannerIcon} src="/icons/handshake.svg" width={50} height={50} alt="icons" />
                                 </div>
                                 <div className={styles.mainContentBottomBanner}>
-                                    <span>
+                                    <span >
                                         Become a <br />
                                         Seller
+                                        <p className={styles.mainContentBottomBannerLearn}>Learn More <ArrowRight size={18} style={{ background: '#f97316', color: 'white', marginTop: '5px', borderRadius: '100%', padding: '1px' }} />
+                                        </p>
                                     </span>
 
                                     <Image className={styles.mainContentBottomBannerIcon} src="/icons/int.svg" width={50} height={50} alt="icons" />
@@ -130,18 +134,21 @@ export const HeroSection = () => {
                                 </div>
 
                                 <div className={styles.mainContentBottomBanner}>
-                                    <span>
-
-                                        Legal Service
+                                    <span >
+                                        Legal <br /> Service
+                                        <p className={styles.mainContentBottomBannerLearn}>Learn More <ArrowRight size={18} style={{ background: '#f97316', color: 'white', marginTop: '5px', borderRadius: '100%', padding: '1px' }} />
+                                        </p>
                                     </span>
 
                                     <Image className={styles.mainContentBottomBannerIcon} src="/icons/wallet.svg" width={50} height={50} alt="icons" />
 
                                 </div>
                                 <div className={styles.mainContentBottomBanner}>
-                                    <span>
-                                        Membership
+                                    <span >
+                                        Membership <br />
                                         Plans
+                                        <p className={styles.mainContentBottomBannerLearn}>Learn More <ArrowRight size={18} style={{ background: '#f97316', color: 'white', marginTop: '5px', borderRadius: '100%', padding: '1px' }} />
+                                        </p>
                                     </span>
                                     <Image className={styles.mainContentBottomBannerIcon} src="/icons/server.svg" width={50} height={50} alt="icons" />
 

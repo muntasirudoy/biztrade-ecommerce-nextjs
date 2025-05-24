@@ -85,6 +85,8 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+    background: rgb(241, 241, 241);
+  border-radius: 5px;
 }
 
 .productCardBody {
@@ -95,7 +97,11 @@
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 
 .productPrice {
   font-size: 14px;
@@ -125,7 +131,7 @@
 .associationLogo {
   width: 1.5rem;
   height: 1.5rem;
-  background-color: #dbeafe;
+  background-color: #feeddb;
   border-radius: 9999px;
   display: flex;
   align-items: center;
@@ -135,7 +141,7 @@
 
 .associationLogo span {
   font-size: 0.75rem;
-  color: #5e91ff;
+  color: var(--primary-color);
 }
 
 .associationName {
@@ -144,11 +150,11 @@
 }
 
 .inquiryButton {
-  background-color: #5e91ff;
+  background-color: var(--primary-color);
   color: white;
   font-size: 12px;
   white-space: nowrap;
-  padding: 0.25rem 0.75rem;
+  padding: 5px 0.75rem;
   border-radius: 0.25rem;
   border: none;
   cursor: pointer;
